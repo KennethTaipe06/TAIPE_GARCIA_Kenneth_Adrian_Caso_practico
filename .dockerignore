@@ -1,0 +1,7 @@
+# Solo entra a la imagen lo que usa el probador
+*
+!app/requirements.txt
+!app/servidor.py
+!app/static/
+!app/datos/
+!resultados/*.joblib

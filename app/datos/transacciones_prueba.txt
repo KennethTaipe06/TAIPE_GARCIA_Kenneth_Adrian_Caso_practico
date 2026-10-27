@@ -1,0 +1,222 @@
+TRANSACCIONES REALES PARA PROBAR LOS MODELOS
+Origen: data/dataset_preparado.csv, conjunto de prueba (10,000 transacciones que los modelos no vieron al entrenar).
+Son filas reales del dataset del caso; ningún valor fue generado. 5 fraudes y 5 legítimas, en orden mezclado.
+Cópielas en el probador (http://localhost:8000) y compare la predicción con la etiqueta real.
+Tarjeta presente / Dispositivo nuevo: 1 = Sí, 0 = No.
+
+============================================================
+TRANSACCIÓN 1   (TX20260907042456)
+============================================================
+Monto de la transacción (USD)            amount_usd           24.94
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        0.333
+Distancia a la ubicación habitual (km)   distance_home_km     23.83
+Riesgo de la IP (0–100)                  ip_risk_score        17.6
+Hora (0–23)                              hour                 11
+Día de la semana (0–6)                   day_of_week          1
+Transacciones del cliente en 24 h        transactions_24h     9
+Antigüedad de la cuenta (días)           account_age_days     3562
+Intentos fallidos en 24 h                failed_attempts_24h  0
+Canal                                    channel              APP
+Categoría del comercio                   merchant_category    transporte
+País                                     country              US
+Tipo de dispositivo                      device_type          movil
+Tarjeta presente                         card_present         0
+Dispositivo nuevo                        new_device           1
+ETIQUETA REAL                            fraud                0  (LEGÍTIMA)
+
+============================================================
+TRANSACCIÓN 2   (TX20260907034998)
+============================================================
+Monto de la transacción (USD)            amount_usd           263.32
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        6.988
+Distancia a la ubicación habitual (km)   distance_home_km     18.99
+Riesgo de la IP (0–100)                  ip_risk_score        14.3
+Hora (0–23)                              hour                 13
+Día de la semana (0–6)                   day_of_week          0
+Transacciones del cliente en 24 h        transactions_24h     6
+Antigüedad de la cuenta (días)           account_age_days     2658
+Intentos fallidos en 24 h                failed_attempts_24h  0
+Canal                                    channel              APP
+Categoría del comercio                   merchant_category    tecnologia
+País                                     country              OTRO
+Tipo de dispositivo                      device_type          cajero
+Tarjeta presente                         card_present         0
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                1  (FRAUDE)
+
+============================================================
+TRANSACCIÓN 3   (TX20260907033369)
+============================================================
+Monto de la transacción (USD)            amount_usd           270.02
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        7.784
+Distancia a la ubicación habitual (km)   distance_home_km     7.31
+Riesgo de la IP (0–100)                  ip_risk_score        15.6
+Hora (0–23)                              hour                 1
+Día de la semana (0–6)                   day_of_week          1
+Transacciones del cliente en 24 h        transactions_24h     3
+Antigüedad de la cuenta (días)           account_age_days     893
+Intentos fallidos en 24 h                failed_attempts_24h  0
+Canal                                    channel              WEB
+Categoría del comercio                   merchant_category    servicios
+País                                     country              US
+Tipo de dispositivo                      device_type          terminal
+Tarjeta presente                         card_present         0
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                1  (FRAUDE)
+
+============================================================
+TRANSACCIÓN 4   (TX20260907035390)
+============================================================
+Monto de la transacción (USD)            amount_usd           129.91
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        2.756
+Distancia a la ubicación habitual (km)   distance_home_km     22.04
+Riesgo de la IP (0–100)                  ip_risk_score        35.1
+Hora (0–23)                              hour                 18
+Día de la semana (0–6)                   day_of_week          2
+Transacciones del cliente en 24 h        transactions_24h     5
+Antigüedad de la cuenta (días)           account_age_days     2268
+Intentos fallidos en 24 h                failed_attempts_24h  0
+Canal                                    channel              APP
+Categoría del comercio                   merchant_category    entretenimiento
+País                                     country              EC
+Tipo de dispositivo                      device_type          desktop
+Tarjeta presente                         card_present         0
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                1  (FRAUDE)
+
+============================================================
+TRANSACCIÓN 5   (TX20260907012341)
+============================================================
+Monto de la transacción (USD)            amount_usd           149.13
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        3.953
+Distancia a la ubicación habitual (km)   distance_home_km     7.07
+Riesgo de la IP (0–100)                  ip_risk_score        6.1
+Hora (0–23)                              hour                 9
+Día de la semana (0–6)                   day_of_week          1
+Transacciones del cliente en 24 h        transactions_24h     5
+Antigüedad de la cuenta (días)           account_age_days     2781
+Intentos fallidos en 24 h                failed_attempts_24h  1
+Canal                                    channel              POS
+Categoría del comercio                   merchant_category    servicios
+País                                     country              EC
+Tipo de dispositivo                      device_type          movil
+Tarjeta presente                         card_present         1
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                0  (LEGÍTIMA)
+
+============================================================
+TRANSACCIÓN 6   (TX20260907035155)
+============================================================
+Monto de la transacción (USD)            amount_usd           55.64
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        0.249
+Distancia a la ubicación habitual (km)   distance_home_km     36.66
+Riesgo de la IP (0–100)                  ip_risk_score        23.5
+Hora (0–23)                              hour                 6
+Día de la semana (0–6)                   day_of_week          2
+Transacciones del cliente en 24 h        transactions_24h     3
+Antigüedad de la cuenta (días)           account_age_days     1048
+Intentos fallidos en 24 h                failed_attempts_24h  0
+Canal                                    channel              POS
+Categoría del comercio                   merchant_category    entretenimiento
+País                                     country              EC
+Tipo de dispositivo                      device_type          tablet
+Tarjeta presente                         card_present         1
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                0  (LEGÍTIMA)
+
+============================================================
+TRANSACCIÓN 7   (TX20260907011463)
+============================================================
+Monto de la transacción (USD)            amount_usd           40.17
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        3.73
+Distancia a la ubicación habitual (km)   distance_home_km     51.25
+Riesgo de la IP (0–100)                  ip_risk_score        36.1
+Hora (0–23)                              hour                 2
+Día de la semana (0–6)                   day_of_week          3
+Transacciones del cliente en 24 h        transactions_24h     5
+Antigüedad de la cuenta (días)           account_age_days     4335
+Intentos fallidos en 24 h                failed_attempts_24h  0
+Canal                                    channel              WEB
+Categoría del comercio                   merchant_category    alimentos
+País                                     country              CO
+Tipo de dispositivo                      device_type          movil
+Tarjeta presente                         card_present         0
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                1  (FRAUDE)
+
+============================================================
+TRANSACCIÓN 8   (TX20260907026673)
+============================================================
+Monto de la transacción (USD)            amount_usd           104.16
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        1.868
+Distancia a la ubicación habitual (km)   distance_home_km     14.51
+Riesgo de la IP (0–100)                  ip_risk_score        7.4
+Hora (0–23)                              hour                 17
+Día de la semana (0–6)                   day_of_week          5
+Transacciones del cliente en 24 h        transactions_24h     4
+Antigüedad de la cuenta (días)           account_age_days     2161
+Intentos fallidos en 24 h                failed_attempts_24h  0
+Canal                                    channel              WEB
+Categoría del comercio                   merchant_category    transporte
+País                                     country              PE
+Tipo de dispositivo                      device_type          cajero
+Tarjeta presente                         card_present         0
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                0  (LEGÍTIMA)
+
+============================================================
+TRANSACCIÓN 9   (TX20260907046878)
+============================================================
+Monto de la transacción (USD)            amount_usd           88.92
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        1.235
+Distancia a la ubicación habitual (km)   distance_home_km     41.84
+Riesgo de la IP (0–100)                  ip_risk_score        39.2
+Hora (0–23)                              hour                 3
+Día de la semana (0–6)                   day_of_week          4
+Transacciones del cliente en 24 h        transactions_24h     2
+Antigüedad de la cuenta (días)           account_age_days     149
+Intentos fallidos en 24 h                failed_attempts_24h  1
+Canal                                    channel              APP
+Categoría del comercio                   merchant_category    viajes
+País                                     country              US
+Tipo de dispositivo                      device_type          terminal
+Tarjeta presente                         card_present         0
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                0  (LEGÍTIMA)
+
+============================================================
+TRANSACCIÓN 10   (TX20260907018112)
+============================================================
+Monto de la transacción (USD)            amount_usd           35.81
+Monto ÷ promedio de 30 días (veces)      amount_vs_avg        1.607
+Distancia a la ubicación habitual (km)   distance_home_km     14.44
+Riesgo de la IP (0–100)                  ip_risk_score        12.5
+Hora (0–23)                              hour                 23
+Día de la semana (0–6)                   day_of_week          0
+Transacciones del cliente en 24 h        transactions_24h     5
+Antigüedad de la cuenta (días)           account_age_days     4108
+Intentos fallidos en 24 h                failed_attempts_24h  0
+Canal                                    channel              ATM
+Categoría del comercio                   merchant_category    otros
+País                                     country              US
+Tipo de dispositivo                      device_type          movil
+Tarjeta presente                         card_present         1
+Dispositivo nuevo                        new_device           0
+ETIQUETA REAL                            fraud                1  (FRAUDE)
+
+============================================================
+RESULTADO DE CADA MODELO (para verificar en el probador)
+============================================================
+N.º  Real      Gradient Boosting     Random Forest         Regresión Logística   Árbol de Decisión     
+1    legítima  38.4% ALERTA          18.8% ALERTA          67.8% ALERTA          24.8% no              
+2    fraude    36.6% ALERTA          19.8% ALERTA          75.1% ALERTA          28.9% no              
+3    fraude    44.2% ALERTA          20.0% ALERTA          71.5% ALERTA          58.7% ALERTA          
+4    fraude    12.0% no              15.2% no              49.6% no              11.9% no              
+5    legítima  9.6% no               13.8% no              45.1% no              6.4% no               
+6    legítima  6.6% no               13.7% no              33.4% no              6.4% no               
+7    fraude    33.9% ALERTA          18.4% no              70.2% ALERTA          24.8% no              
+8    legítima  19.2% no              17.3% no              61.3% no              24.8% no              
+9    legítima  35.4% ALERTA          18.7% ALERTA          74.0% ALERTA          51.4% ALERTA          
+10   fraude    14.6% no              15.7% no              42.7% no              11.9% no              
+
+Umbrales: Gradient Boosting 0.330 · Random Forest 0.185 · Regresión Logística 0.649 · Árbol de Decisión 0.343
